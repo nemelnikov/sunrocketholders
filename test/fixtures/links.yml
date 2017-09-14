@@ -1,0 +1,29 @@
+# == Schema Information
+#
+# Table name: links
+#
+#  created_at :datetime         not null
+#  id         :integer          not null, primary key
+#  name       :string
+#  rocket     :string
+#  telegram   :string
+#  tinkoff    :string
+#  updated_at :datetime         not null
+#  weight     :integer
+#
+
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  rocket: MyString
+  tinkoff: MyString
+  name: MyString
+  telegram: MyString
+  weight: 1
+
+two:
+  rocket: MyString
+  tinkoff: MyString
+  name: MyString
+  telegram: MyString
+  weight: 1

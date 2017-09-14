@@ -1,2 +1,25 @@
-<% provide(:title, "Home") %>
-<p>Find me in app/views/home/index.html.erb</p>
+<% provide(:title, "Регайся по данной ссылке и никому не будет обидно") %>
+<table class="table table-bordered">
+  <tbody>
+  <tr>
+    <th class="col-sm-2">Rocket</th>
+    <td><%= @link.rocket %></td>
+  </tr>
+  <tr>
+    <th class="col-sm-2">Tinkoff</th>
+    <td><%= @link.tinkoff %></td>
+  </tr>
+  <tr>
+    <th class="col-sm-2">Name</th>
+    <td><%= @link.name %></td>
+  </tr>
+  <tr>
+    <th class="col-sm-2">Telegram</th>
+    <td><%= @link.telegram %></td>
+  </tr>
+  <tr>
+    <th class="col-sm-2">Weight</th>
+    <td><%= @link.weight %></td>
+  </tr>
+  </tbody>
+</table>

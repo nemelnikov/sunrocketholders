@@ -1,0 +1,44 @@
+<% provide(:title, "Listing links") %>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th>Rocket</th>
+      <th>Tinkoff</th>
+      <th>Name</th>
+      <th>Telegram</th>
+      <th>Weight</th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @links.each do |link| %>
+      <tr>
+        <td><%= link.rocket %></td>
+        <td><%= link.tinkoff %></td>
+        <td><%= link.name %></td>
+        <td><%= link.telegram %></td>
+        <td><%= link.weight %></td>
+        <td>
+          <div class="btn-group">
+            <%= link_to link, :class => "btn btn-xs btn-default" do %>
+              <%= fa_icon("eye", :text => "Show") %>
+            <% end %>
+            <%= link_to edit_link_path(link), :class => "btn btn-xs btn-default" do %>
+              <%= fa_icon("pencil", :text => "Edit") %>
+            <% end %>
+            <%= link_to link, :class => "btn btn-xs btn-danger", :method => :delete, :data => { :confirm => "Are you sure you want to delete this link?" } do %>
+              <%= fa_icon("trash-o", :text => "Destroy") %>
+            <% end %>
+          </div>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to new_link_path, :class => "btn btn-default" do %>
+  <%= fa_icon("plus", :text => "New Link") %>
+<% end %>

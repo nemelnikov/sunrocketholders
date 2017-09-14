@@ -1,0 +1,14 @@
+<%= bootstrap_form_for(@link) do |f| %>
+
+  <%= f.alert_message "Please review the problems below:" %>
+
+  <%= f.text_field :rocket %>
+  <%= f.text_field :tinkoff %>
+  <%= f.text_field :name %>
+  <%= f.text_field :telegram %>
+  <%= f.number_field :weight %>
+
+  <%= f.primary %>
+  <%= link_to "Back", links_path, :class => "btn btn-link" %>
+
+<% end %>
