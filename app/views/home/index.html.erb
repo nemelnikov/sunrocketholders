@@ -2,24 +2,21 @@
 <table class="table table-bordered">
   <tbody>
   <tr>
-    <th class="col-sm-2">Rocket</th>
-    <td><%= @link.rocket %></td>
-  </tr>
-  <tr>
-    <th class="col-sm-2">Tinkoff</th>
-    <td><%= @link.tinkoff %></td>
-  </tr>
-  <tr>
-    <th class="col-sm-2">Name</th>
+    <th class="col-sm-2">Кому поможем</th>
     <td><%= @link.name %></td>
   </tr>
   <tr>
-    <th class="col-sm-2">Telegram</th>
-    <td><%= @link.telegram %></td>
+    <th class="col-sm-2">Ссылка на Рокет</th>
+    <td> <%= link_to "Заказать Рокет", "@link.rocket" %>
   </tr>
   <tr>
-    <th class="col-sm-2">Weight</th>
-    <td><%= @link.weight %></td>
+    <th class="col-sm-2">Ссылка на Тиньков</th>
+    <td> <%= link_to "Тинькова тоже можно заказать", "@link.tinkoff" %>
+
+  </tr>
+  <tr>
+    <th class="col-sm-2">Ссылка на телеграм</th>
+    <td> <%= link_to "Порадовать, что заказали карту", "@link.telegram" %>
   </tr>
   </tbody>
 </table>
