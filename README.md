@@ -1,9 +1,9 @@
-# sunrocketholders
+# randomly generate referral link to some finacial service
+# https://suncards.herokuapp.com/
 
 This is a Rails 5 app.
 
-## Documentation
-
+# some standart text...
 This README describes the purpose of this repository and how to set up a development environment. Other sources of documentation are as follows:
 
 * UI and API designs are in `doc/`
