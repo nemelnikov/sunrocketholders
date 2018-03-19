@@ -33,6 +33,7 @@ group :production, :staging do
   gem "postmark-rails"
   gem "unicorn"
   gem "unicorn-worker-killer"
+  gem 'rails_12factor'
 end
 
 group :development do

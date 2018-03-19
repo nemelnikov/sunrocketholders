@@ -5,18 +5,25 @@
     <th class="col-sm-2">Кому поможем</th>
     <td><%= @link.name %></td>
   </tr>
+  <% if !@link.rocket.empty? %>
   <tr>
     <th class="col-sm-2">Ссылка на Рокет</th>
-    <td> <%= link_to "Заказать Рокет", "@link.rocket" %>
+    <td> <%= link_to "Заказать Рокет", @link.rocket %>
   </tr>
+  <% end %>
+  <% if !@link.tinkoff.empty? %>
   <tr>
     <th class="col-sm-2">Ссылка на Тиньков</th>
-    <td> <%= link_to "Тинькова тоже можно заказать", "@link.tinkoff" %>
-
+    <td> <%= link_to "Тинькова тоже можно заказать", @link.tinkoff %>
   </tr>
+  <% end %>
+
   <tr>
-    <th class="col-sm-2">Ссылка на телеграм</th>
-    <td> <%= link_to "Порадовать, что заказали карту", "@link.telegram" %>
+    <td colspan="2"> <%= link_to "Написать в телеграм и порадовать, что заказали карту", @link.telegram %>
+  </tr>
+
+  <tr>
+    <td colspan="2"> Хочешь добавить свою карту сюда? Напиши Никите:)
   </tr>
   </tbody>
 </table>
